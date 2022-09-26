@@ -1,13 +1,16 @@
 #include "gmock/gmock.h"
-
 #include "example.h"
-
 using namespace testing;
-
-namespace foobar::tests
+namespace foobar::test
 {
-	TEST(ExampleTests, Example) {
-		foobar::Example example{};
-        ASSERT_THAT(example.getValue(), Eq(99));
-	}
+    TEST(EsPar1, EsPar) //pide un nombre no estoy segura de si es eso
+    {
+        //assert(EsPar(2), true);
+        ASSERT_THAT(EsPar(20), true);
+    }
+    TEST(EsMax, Maximo)
+    {
+        ASSERT_THAT(Maximo(10, 15), 15);
+    }
+
 }

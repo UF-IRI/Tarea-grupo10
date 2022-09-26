@@ -5,8 +5,7 @@
 
 int main(int argc, char** argv)
 {
-    foobar::Example example{};
-    std::cout << "Example.getValue() => " << example.getValue() << std::endl;
-
+    EsPar(20);
+    Maximo(10, 15);
     return EXIT_SUCCESS;
 }
